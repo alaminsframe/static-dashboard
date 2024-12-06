@@ -18,9 +18,11 @@ const MainHeader = () => {
                     <span className="absolute -top-1 -right-1 bg-[#8B5CF6] rounded-full h-4 w-4 text-[10px] text-white flex justify-center items-center">3</span>
                 </button>
                 <div className="relative">
-                    <button onClick={() => setIsOpen(!IsOpen)} className="flex items-center gap-1.5 font-poppins font-medium text-sm">
+                    <button onClick={() => setIsOpen(!IsOpen)} className="flex items-center gap-1.5 font-poppins font-medium text-sm ">
                         Admin
-                        <MdOutlineKeyboardArrowDown size={17} className="fill-gray-500"/>
+
+                        <MdOutlineKeyboardArrowDown size={17} className={`fill-gray-500 duration-300 ${IsOpen ? "rotate-180": ""}
+                        `}/>
                     </button>
 
                    
