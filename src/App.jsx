@@ -10,9 +10,15 @@ function App() {
 
   return (
     <>
-      <MainHeader />
-      <SideBar />
-      <Content />
+      <div className='flex'>
+        <SideBar />
+        <div className='flex-1'>
+          <MainHeader />
+          <Content />
+        </div>
+      </div>
+      
+      
     </>
   )
 }

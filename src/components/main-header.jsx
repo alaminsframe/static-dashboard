@@ -10,7 +10,7 @@ const MainHeader = () => {
   return (
     <>
         <div className="">
-            <div className="bg-white drop-shadow-lg py-5 flex justify-end items-center px-16 gap-12">
+            <div className="bg-white drop-shadow-md py-5 flex justify-end items-center px-12 gap-12">
                 <button className="relative">
                     <div className="">
                         <FaRegBell size={20} color="gray" />
