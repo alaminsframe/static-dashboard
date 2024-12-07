@@ -10,7 +10,7 @@ const MainHeader = () => {
   return (
     <>
         <div className="">
-            <div className="bg-white drop-shadow-md py-5 flex justify-end items-center px-12 gap-12">
+            <div className="bg-white drop-shadow-md py-5 flex justify-end items-center px-5 md:px-12 gap-5 md:gap-12">
                 <button className="relative">
                     <div className="">
                         <FaRegBell size={20} color="gray" />
@@ -27,11 +27,17 @@ const MainHeader = () => {
 
                    
                     {IsOpen && (
-                         <ul className="absolute top-8 bg-white text-sm font-sans px-2.5 pt-2 shadow-lg w-24 divide-y rounded">
-                            <li className="py-1"><a href="#">Settings</a></li>
-                            <li className="py-1"><a href="#">Profile</a></li>
-                            <li className="py-1 text-red-500"><a href="#">Log Out</a></li>
-                        </ul>
+                         <div className="absolute top-8 -left-4 bg-white text-xs md:text-sm font-poppins shadow-lg w-24 divide-y rounded">
+                            <button className="py-1.5 md:py-1 px-3 w-full mx-auto hover:bg-[#8B5CF6] hover:text-white hover:rounded duration-300"> 
+                            Settings
+                            </button> 
+                            <button className="py-1.5 md:py-1 px-3 w-full mx-auto hover:bg-[#8B5CF6] hover:text-white hover:rounded duration-300"> 
+                            Profile
+                            </button> 
+                            <button className="py-1.5 px-3 w-full mx-auto text-red-600 hover:bg-[#8B5CF6] hover:text-white hover:rounded duration-300"> 
+                            Log Out
+                            </button> 
+                        </div>
                     )}
                 </div>
             </div>
